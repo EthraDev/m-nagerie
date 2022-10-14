@@ -7,16 +7,28 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+
+    background-color: #7E706A;
+    color: white
+}
+
 .menu {
     @include mixins.flex(space-between, center);
     padding: 0 3em;
-    background-color: #7E706A;
-    color: white;
 
     ul {
         @include mixins.flex(space-around, center, 20px);
-        list-style: none;
         font-size: 20px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        :hover {
+            border-bottom: solid 2px white;
+        }
     }
 
     img {
@@ -57,8 +69,6 @@
 .presentation {
     text-align: center;
     padding: 3em 20% 3em 20%;
-    background-color: #7E706A;
-    color: white;
 
     p {
         margin: 1em 0 2em 0;
@@ -90,4 +100,20 @@
         display: flex;
         justify-content: center;
     }
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em;
+    gap: 20px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+footer {
+    border-top: 1px solid white;
 }

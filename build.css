@@ -5,21 +5,30 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+body {
+  background-color: #7E706A;
+  color: white;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 3em;
-  background-color: #7E706A;
-  color: white;
 }
 .menu ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-  list-style: none;
   font-size: 20px;
+}
+.menu ul a {
+  color: white;
+  text-decoration: none;
+}
+.menu ul :hover {
+  border-bottom: solid 2px white;
 }
 .menu img {
   width: 8%;
@@ -52,8 +61,6 @@
 .presentation {
   text-align: center;
   padding: 3em 20% 3em 20%;
-  background-color: #7E706A;
-  color: white;
 }
 .presentation p {
   margin: 1em 0 2em 0;
@@ -77,6 +84,21 @@
 .presentation .flex-center {
   display: flex;
   justify-content: center;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em;
+  gap: 20px;
+}
+.footer-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid white;
 }
 
 /*# sourceMappingURL=build.css.map */
