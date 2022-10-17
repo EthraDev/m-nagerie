@@ -53,6 +53,7 @@ body {
   font-family: "Anton", sans-serif;
   letter-spacing: 2px;
   font-size: 26px;
+  color: black;
 }
 .background-image img {
   width: 30%;
@@ -84,6 +85,35 @@ body {
 .presentation .flex-center {
   display: flex;
   justify-content: center;
+}
+
+#instal {
+  text-align: center;
+  padding: 1em 0 2em 0;
+  font-size: 30px;
+}
+
+.instal {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10em;
+}
+.instal .grid-instal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 20px;
+  padding: 0 1em;
+}
+.instal .grid-instal div img {
+  width: 70%;
+  height: 60%;
+  object-fit: cover;
+}
+.instal .grid-instal div p {
+  padding: 0 2em;
+  line-height: 20px;
 }
 
 .footer-menu {

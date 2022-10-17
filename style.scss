@@ -10,7 +10,7 @@
 body {
 
     background-color: #7E706A;
-    color: white
+    color: white;
 }
 
 .menu {
@@ -59,6 +59,7 @@ body {
         font-family: 'Anton', sans-serif;
         letter-spacing: 2px;
         font-size: 26px;
+        color: black;
     }
 
     img {
@@ -99,6 +100,42 @@ body {
     .flex-center {
         display: flex;
         justify-content: center;
+    }
+}
+
+#instal {
+    text-align: center;
+    padding: 1em 0 2em 0;
+    font-size: 30px;
+}
+
+.instal {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10em;
+
+    .grid-instal {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: 20px;
+        padding: 0 1em;
+
+        div {
+
+            img {
+                width: 70%;
+                height: 60%;
+                object-fit: cover;
+            }
+
+            p {
+                padding: 0 2em;
+                line-height: 20px;
+            }
+        }
     }
 }
 
