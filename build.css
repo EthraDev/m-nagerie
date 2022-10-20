@@ -131,4 +131,24 @@ footer {
   border-top: 1px solid white;
 }
 
+.grid-animals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-top: 1em;
+}
+.grid-animals div img {
+  width: 70%;
+  height: 80%;
+}
+.grid-animals div h2 {
+  padding-top: 15px;
+}
+
+.title-animal {
+  text-align: center;
+  font-size: 30px;
+  padding: 1em 0;
+}
+
 /*# sourceMappingURL=build.css.map */
