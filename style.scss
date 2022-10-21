@@ -216,7 +216,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 10em;
+    margin-bottom: 3em;
 
     .grid-instal {
         @include mixins.grid(4, 20px, 0 1em);
