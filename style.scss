@@ -13,6 +13,7 @@ body {
     color: white;
 }
 
+
 .menu {
     @include mixins.flex(space-between, center);
     padding: 0 3em;
@@ -24,6 +25,18 @@ body {
         a {
             color: white;
             text-decoration: none;
+
+            @media screen and (max-width: 600px) {
+                font-size: 12px;
+            }
+
+            @media screen and (min-width:601px) and (max-width: 1024px) {
+                font-size: 16px;
+            }
+    
+            @media screen and (min-width:1025px) and (max-width: 1700px) {
+                font-size: 18px;
+            }
         }
 
         :hover {
@@ -43,6 +56,18 @@ body {
     height: 70vh;
     background-size: cover;
 
+    @media screen and (max-width: 600px) {
+        height: 20vh;
+    }
+
+    @media screen and (min-width:601px) and (max-width: 1024px) {
+        height: 40vh;
+    }
+
+    @media screen and (min-width:1025px) and (max-width: 1700px) {
+        height: 60vh;
+    }
+
 
     div {
         display: flex;
@@ -51,6 +76,18 @@ body {
         width: 30%;
         flex-direction: column;
         padding-top: 5em;
+
+        @media screen and (max-width: 600px) {
+            padding-top: 1em;
+        }
+    
+        @media screen and (min-width:601px) and (max-width: 1024px) {
+            padding-top: 2em;
+        }
+    
+        @media screen and (min-width:1025px) and (max-width: 1700px) {
+            padding-top: 5em;
+        }
     }
 
     h3,
@@ -60,6 +97,22 @@ body {
         letter-spacing: 2px;
         font-size: 26px;
         color: black;
+        text-align: center;
+
+        @media screen and (max-width: 600px) {
+            font-size: 12px;
+            letter-spacing: 0;
+        }
+    
+        @media screen and (min-width:601px) and (max-width: 1024px) {
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    
+        @media screen and (min-width:1025px) and (max-width: 1700px) {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
     }
 
     img {
@@ -71,14 +124,51 @@ body {
     text-align: center;
     padding: 3em 20% 3em 20%;
 
+    @media screen and (max-width: 600px) {
+        padding: 1em 20% 1em 20%;
+    }
+
+    @media screen and (min-width:601px) and (max-width: 1024px) {
+        padding: 2em 20% 2em 20%;
+    }
+
+    @media screen and (min-width:1025px) and (max-width: 1700px) {
+        padding: 3em 20% 3em 20%;
+    }
+
     p {
         margin: 1em 0 2em 0;
         line-height: 22px;
         font-size: 18px;
+
+        
+        @media screen and (max-width: 600px) {
+            font-size: 10px;
+        }
+
+        @media screen and (min-width:601px) and (max-width: 1024px) {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width:1025px) and (max-width: 1700px) {
+            font-size: 16px;
+        }
     }
 
     h2 {
         font-size: 30px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 16px;
+        }
+    
+        @media screen and (min-width:601px) and (max-width: 1024px) {
+            font-size: 24px;
+        }
+    
+        @media screen and (min-width:1025px) and (max-width: 1700px) {
+            font-size: 26px;
+        }
     }
 
     .grid-jardin {
@@ -107,6 +197,18 @@ body {
     text-align: center;
     padding: 1em 0 2em 0;
     font-size: 30px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width:601px) and (max-width: 1024px) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width:1025px) and (max-width: 1700px) {
+        font-size: 26px;
+    }
 }
 
 .instal {
@@ -117,23 +219,61 @@ body {
     margin-bottom: 10em;
 
     .grid-instal {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        @include mixins.grid(4, 20px, 0 1em);
         width: 100%;
-        gap: 20px;
-        padding: 0 1em;
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width:601px) and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width:1025px) and (max-width: 1700px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         div {
 
             img {
                 width: 70%;
-                height: 60%;
+                aspect-ratio: 3 / 3;
                 object-fit: cover;
             }
 
             p {
                 padding: 0 2em;
                 line-height: 20px;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 10px;
+                }
+        
+                @media screen and (min-width:601px) and (max-width: 1024px) {
+                    font-size: 14px;
+                }
+        
+                @media screen and (min-width:1025px) and (max-width: 1700px) {
+                    font-size: 16px;
+                }
+            }
+
+            h3 {
+
+                padding: 2% 0;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 16px;
+                }
+            
+                @media screen and (min-width:601px) and (max-width: 1024px) {
+                    font-size: 24px;
+                }
+            
+                @media screen and (min-width:1025px) and (max-width: 1700px) {
+                    font-size: 26px;
+                }
             }
         }
     }
@@ -148,6 +288,32 @@ body {
     a {
         color: white;
         text-decoration: none;
+
+        @media screen and (max-width: 600px) {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width:601px) and (max-width: 1024px) {
+            font-size: 16px;
+        }
+
+        @media screen and (min-width:1025px) and (max-width: 1700px) {
+            font-size: 18px;
+        }
+    }
+
+    p {
+        @media screen and (max-width: 600px) {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width:601px) and (max-width: 1024px) {
+            font-size: 16px;
+        }
+
+        @media screen and (min-width:1025px) and (max-width: 1700px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -170,12 +336,108 @@ footer {
 
         h2 {
             padding-top: 15px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 10px;
+                padding-top: 1px;
+            }
+        
+            @media screen and (min-width:601px) and (max-width: 1024px) {
+                font-size: 16px;
+                padding-top: 2px;
+            }
+        
+            @media screen and (min-width:1025px) and (max-width: 1700px) {
+                font-size: 20px;
+                padding-top: 5px;
+            }
         }
     }
+
+
 }
 
 .title-animal {
     text-align: center;
     font-size: 30px;
     padding: 1em 0;
+
+    @media screen and (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width:601px) and (max-width: 1024px) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width:1025px) and (max-width: 1700px) {
+        font-size: 26px;
+    }
+}
+
+.flex-histoire {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 10em;
+    align-items: center;
+
+    img {
+        width: 30%;
+        object-fit: contain;
+    }
+
+    p {
+        text-align: center;
+        padding-right: 3em;
+        font-size: 18px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 10px;
+        }
+
+        @media screen and (min-width:601px) and (max-width: 1024px) {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width:1025px) and (max-width: 1700px) {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 0 1em;
+    }
+
+    @media screen and (min-width:601px) and (max-width: 1024px) {
+        padding: 0 2em;
+    }
+}
+
+.titre-histoire {
+    text-align: center;
+    padding: 2em 0;
+    font-size: 30px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width:601px) and (max-width: 1024px) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width:1025px) and (max-width: 1700px) {
+        font-size: 26px;
+    }
+}
+
+.archive {
+    @include mixins.grid(4, 30px, 0 2em 2em 2em);
+
+    img {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
 }
